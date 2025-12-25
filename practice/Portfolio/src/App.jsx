@@ -13,7 +13,7 @@ function App() {  return (
           </div>
         </div>
 
-        <div className="px-4 text-lg">
+        <div className="px-4 ">
           <span className="inline-block flex"></span>
           <h2 className=" flex mb-2 text-xl font-sans font-bold "> <User />About Me</h2>
           <p className="mb-4">
