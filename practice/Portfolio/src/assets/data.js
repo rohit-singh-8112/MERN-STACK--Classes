@@ -1,20 +1,4 @@
 
-
-
-
-import AboutMe from './component/About_me.jsx';
-import Header from './component/Header.jsx';
-import Experience from './component/Experience.jsx';
-import Skills from './component/Skills.jsx';  
-import Contect from './component/Contect.jsx';
-import Education from './component/Education.jsx';
-import Activities from './component/Activities.jsx';
-import Hobbies from './component/Hobbies.jsx';
-
-
-function App() { 
-
-
 const ExprienceArr = [
     {
       title: "Portfolio Website",
@@ -56,37 +40,3 @@ const ExprienceArr = [
       CourseWork: ["Graduated with Honors", "Focus on Science and Mathematics"]
     }
   ];
-
-  const ActivitiesArr = [
-    "Member of the university coding club, organizing hackathons and coding competitions.",
-    "Volunteered for local community tech workshops, teaching basic programming skills to beginners.",
-    "Participated in inter-college tech fests and won awards for innovative project presentations."
-  ];
-
-  const HobbiesArr = [
-    "Coding and exploring new technologies",
-    "Reading tech blogs and books",
-    "Traveling and experiencing different cultures",
-    "Playing chess and solving puzzles"
-  ];
-
-  
-  
-  return (
-    <>
-      <div className="m-2 bg-gray-200 rounded">
-        <Header />
-        <AboutMe />
-        <Experience ExprienceArr={ExprienceArr} />
-        <Skills SkillsArr={SkillsArr} />
-        <Education EducationArr={EducationArr} />
-        <Hobbies HobbiesArr={HobbiesArr} />
-        <Activities ActivitiesArr={ActivitiesArr} />
-        <Contect LinksNameURL={LinksNameURL} />
-      </div>
-      
-    </>
-  )
-}
-
-export default App
