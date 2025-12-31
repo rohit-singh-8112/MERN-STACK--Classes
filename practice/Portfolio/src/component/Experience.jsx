@@ -1,15 +1,12 @@
 
 import { Briefcase } from "lucide-react";
-import Heading from "./Heading.jsx";
+import Section from "./Section.jsx";
 import ProjectContent from "./ProjectContent.jsx";
 
 const Experience = ({ExprienceArr}) => {
   return (
     <div className ="mt-4 px-4" >
-          <div className="flex">
-            <Briefcase />
-            <Heading name="Experience" font="h2" />
-          </div>
+          <Section Icon={<Briefcase />} title="Experience" font="h2" />
           {ExprienceArr.map((project, index) => (
             <ProjectContent 
               key={index}

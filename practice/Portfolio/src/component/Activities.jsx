@@ -1,14 +1,11 @@
 
 import { Award } from 'lucide-react';
-import Heading from './Heading.jsx';
+import Section from './Section.jsx';
 
 const Activities = ({ ActivitiesArr }) => {
   return (
       <div className="mt-4 px-4">
-          <div className="flex">
-            <Award />
-            <Heading name="Extracurricular Activities" font="h2" />
-          </div>
+          <Section Icon={<Award />} title="Extracurricular Activities" font="h2" />
           <ul className="list-disc list-inside mt-2 mb-4 mx-3 text-gray-700">
             {ActivitiesArr.map((activity, index) => (
               <li key={index}>{activity}</li>

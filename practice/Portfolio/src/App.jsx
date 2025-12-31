@@ -75,15 +75,17 @@ const ExprienceArr = [
   
   return (
     <>
-      <div className="m-2 bg-gray-200 rounded">
-        <Header />
-        <AboutMe />
-        <Experience ExprienceArr={ExprienceArr} />
-        <Skills SkillsArr={SkillsArr} />
-        <Education EducationArr={EducationArr} />
-        <Hobbies HobbiesArr={HobbiesArr} />
-        <Activities ActivitiesArr={ActivitiesArr} />
-        <Contect LinksNameURL={LinksNameURL} />
+      <div className="bg-gray-400">
+        <div className="max-w-3xl m mx-auto bg-white">
+          <Header />
+          <AboutMe />
+          <Experience ExprienceArr={ExprienceArr} />
+          <Skills SkillsArr={SkillsArr} />
+          <Education EducationArr={EducationArr} />
+          <Hobbies HobbiesArr={HobbiesArr} />
+          <Activities ActivitiesArr={ActivitiesArr} />
+          <Contect LinksNameURL={LinksNameURL} />
+        </div>
       </div>
       
     </>

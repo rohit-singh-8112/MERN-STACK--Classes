@@ -1,6 +1,6 @@
 
 import {Globe} from 'lucide-react';
-import Heading from './Heading.jsx';
+import Section from './Section.jsx';
 import Link from './Link.jsx';
 
 
@@ -9,10 +9,7 @@ const Contect = ({LinksNameURL}) => {
   
   return (
     <div className="mt-4 px-4">
-          <div className="flex">
-            <Globe />
-            <Heading name="Contact & Social Media" font="h2" />
-          </div>
+          <Section Icon={<Globe />} title="Contact & Social Media" font="h2" />
           <ul className="mt-2 mb-4 mx-3 text-gray-700">
             <li>Email: Chauhanrc7878@email.com</li>
             <li>Phone: +919336454282</li>
