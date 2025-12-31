@@ -6,10 +6,10 @@ import ProjectContent from "./ProjectContent.jsx";
 const Experience = ({ExprienceArr}) => {
   return (
     <div className ="mt-4 px-4" >
-          <span  className="mb-2 pt-3 font-sans">
+          <div className="flex">
             <Briefcase />
             <Heading name="Experience" font="h2" />
-          </span>
+          </div>
           {ExprienceArr.map((project, index) => (
             <ProjectContent 
               key={index}
