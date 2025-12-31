@@ -20,6 +20,7 @@ const Contect = ({LinksNameURL}) => {
           {LinksNameURL.map((link) => (
             <Link
             key={link.id}
+            icon={link.icon}
             name={link.name}
             url={link.url} />
           ))}

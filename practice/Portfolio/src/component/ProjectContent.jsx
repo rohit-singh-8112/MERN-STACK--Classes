@@ -8,7 +8,7 @@ const ProjectContent = ({title, discription,tech}) => {
           <div className="shadow-xl shadow-gray-400 mt-2 mx-2 rounded bg-sky-100/20">
             <Heading name={title} />
             <p className="pt-2 px-4 text-gray-600">{discription}</p>
-            <div className="flex">  
+            <div className="flex flex-wrap justify-start">  
               {tech.map((tech, index) => (
                 <ProjectTechName key={index} tech={tech} />
               ))}

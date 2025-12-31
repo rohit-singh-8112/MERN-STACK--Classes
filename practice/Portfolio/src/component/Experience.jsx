@@ -6,7 +6,7 @@ import ProjectContent from "./ProjectContent.jsx";
 const Experience = ({ExprienceArr}) => {
   return (
     <div className ="mt-4 px-4" >
-          <span  className="flex mb-2 pt-3 font-sans">
+          <span  className="mb-2 pt-3 font-sans">
             <Briefcase />
             <Heading name="Experience" font="h2" />
           </span>

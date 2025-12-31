@@ -10,6 +10,7 @@ import Contect from './component/Contect.jsx';
 import Education from './component/Education.jsx';
 import Activities from './component/Activities.jsx';
 import Hobbies from './component/Hobbies.jsx';
+import { Linkedin, Github, Twitter, Earth } from "lucide-react";
 
 
 function App() { 
@@ -36,10 +37,10 @@ const ExprienceArr = [
   const SkillsArr =["JavaScript", "Python", "React", "Node.js", "Django", "SQL"];
 
   const LinksNameURL = [
-    {name: "LinkedIn", url: "https://www.linkedin.com/in/yourprofile", id:"1"},
-    {name: "GitHub", url: "https://github.com/yourprofile", id:"2"},
-    {name: "Twitter", url: "https://twitter.com/yourprofile", id:"3"},
-    {name: "Website", url: "https://www.yourwebsite.com", id:"4"}
+    {name: "LinkedIn", url: "https://www.linkedin.com/in/yourprofile", id:"1", icon: <Linkedin />},
+    {name: "GitHub", url: "https://github.com/yourprofile", id:"2", icon: <Github />},
+    {name: "Twitter", url: "https://twitter.com/yourprofile", id:"3", icon: <Twitter />},
+    {name: "Website", url: "https://www.yourwebsite.com", id:"4", icon: <Earth />}
   ];
 
   const EducationArr = [
