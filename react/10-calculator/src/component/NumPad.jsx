@@ -17,10 +17,11 @@ const NumPad = ({ displayValue, setDisplayValue }) => {
     <br />
       <Button key="clear" label="C" onClickHandler={() => setDisplayValue('')}/>
       <br />
-      
-      {Numberarr.map((num,index) => (
-        <Button key={index} label={num} onClickHandler={() => addToDisplay(num)} />
-      ))}
+      <div className="flex flex-wrap align-auto">
+        {Numberarr.map((num,index) => (
+          <Button key={index} label={num} onClickHandler={() => addToDisplay(num)} />
+        ))}
+      </div> 
       {Operatorsarr.map((op,index) => (
         <Button key={index} label={op} onClickHandler={() => addToDisplay(op)} />
       ))} <br />
