@@ -10,9 +10,6 @@ const AddTodo = ({addTodoInput}) => {
     addTodoInput(textValue, dateValue);
     textInput.current.value ='';
     dateInput.current.value = '';
-    console.log(textValue,dateValue,Date.now());
-    
-  
   }
     return (
       <div className="container text-center ">
