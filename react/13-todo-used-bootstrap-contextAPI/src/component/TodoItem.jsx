@@ -1,6 +1,9 @@
+import React,{ useContext } from 'react';
+import TodoItemContext from '../store/TodoContext';
+
 import './CSS/button.css'
-const TodoItem = ({keyId, todoText, todoDate, deleteTodoElement}) => {
- 
+const TodoItem = ({keyId, todoText, todoDate}) => {
+ const {deleteTodoElement} = useContext(TodoItemContext);
     return (
          <div className="container text-center">
         <div className="row ms-1" >
@@ -12,5 +15,5 @@ const TodoItem = ({keyId, todoText, todoDate, deleteTodoElement}) => {
         </div>
       </div>
     );
-  }
-  export default TodoItem;
+  };
+  export default TodoItem; 

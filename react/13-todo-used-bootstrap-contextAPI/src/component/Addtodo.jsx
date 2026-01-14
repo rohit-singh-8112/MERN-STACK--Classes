@@ -1,16 +1,21 @@
 import './CSS/button.css'
-import { useRef } from 'react';
+import React,{ useRef, useContext } from 'react';
+import TodoItemContext from '../store/TodoContext';
 
-const AddTodo = ({addTodoInput}) => {
+const AddTodo = () => {
+
   const textInput = useRef();
   const dateInput = useRef();
+  const {addTodoInput} = useContext(TodoItemContext);
+
   const AddHandler =() => {
     const textValue = textInput.current.value;
     const dateValue = dateInput.current.value;
     addTodoInput(textValue, dateValue);
-    textInput.current.value ='';
+    textInput.current.value =''; 
     dateInput.current.value = '';
   }
+
     return (
       <div className="container text-center ">
         <div className="row">
@@ -26,5 +31,5 @@ const AddTodo = ({addTodoInput}) => {
         </div>
       </div>
     );
-}
+};
 export default AddTodo;
