@@ -1,9 +1,12 @@
 import './CSS/button.css'
-import { useRef } from 'react';
+import { useRef, useContext } from 'react';
+import ListContext from '../store/TodoContext';
 
-const AddTodo = ({addTodoInput}) => {
+const AddTodo = () => {
   const textInput = useRef();
   const dateInput = useRef();
+  const {addTodoInput} = useContext(ListContext);
+
   const AddHandler =() => {
     const textValue = textInput.current.value;
     const dateValue = dateInput.current.value;

@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Hero Section with Image Slider */
+#hero {
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    animation: heroSlider 6s infinite;
+}
+
+@keyframes heroSlider {
+    0% {
+        background-image: url("./component/image/hero1.jpg");
+    }
+    33% {
+        background-image: url("./component/image/hero2.jpg");
+    }
+    66% {
+        background-image: url("./component/image/hero3.jpg");
+    }
+    100% {
+        background-image: url("./component/image/hero1.jpg");
+    }
+}
+
+.hero-content h1 {
+    font-size: 42px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ff5733;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#features, #testimonials, #contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Features */
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    background: #f4f4f4;
+    padding: 25px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Testimonials */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features-container,
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 80%;
+    }
+}

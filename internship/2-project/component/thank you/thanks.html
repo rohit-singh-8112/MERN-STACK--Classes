@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thank-you-container {
+      background: #fff;
+      padding: 50px 35px;
+      max-width: 420px;
+      width: 100%;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    .check-icon {
+      font-size: 70px;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background: #667eea;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      background: #5a67d8;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-you-container">
+    <div class="check-icon">✔</div>
+    <h1>Thank You!</h1>
+    <p>
+      Your submission has been received successfully.  
+      Our team will contact you shortly.
+    </p>
+    <a href="index.html">Go Back Home</a>
+  </div>
+
+</body>
+</html>

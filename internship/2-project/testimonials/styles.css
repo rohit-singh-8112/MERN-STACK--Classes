@@ -1,0 +1,83 @@
+
+/* ===== TESTIMONIALS HERO ===== */
+.testimonials-hero {
+    background: url("../component/image/hero3.jpg") center/cover no-repeat;
+}
+
+/* ===== TESTIMONIALS PAGE ===== */
+.testimonials-page {
+    padding: 60px 20px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.testimonial-card {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+}
+
+.testimonial-card h4 {
+    margin-top: 15px;
+}
+
+.testimonial-card span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* ===== TESTIMONIAL IMAGE SLIDER ===== */
+.testimonial-slider-section {
+    padding: 60px 20px;
+}
+
+.back-wall{
+  width: 100%;
+  background-color: #666;
+}
+.testimonial-slider {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    animation: testimonialSlider 6s infinite;
+    
+}
+
+@keyframes testimonialSlider {
+    0%   { background-image: url("../component/image/user1.jpg"); }
+    33%  { background-image: url("../component/image/user2.jpg"); }
+    66%  { background-image: url("../component/image/user3.jpg"); }
+    100% { background-image: url("../component/image/user1.jpg"); }
+}
+
+/* ===== ACTIVE LINK ===== */
+.nav-links .active {
+    color: #ff5733;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-slider {
+        width: 200px;
+        height: 200px;
+    }
+}

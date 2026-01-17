@@ -1,6 +1,10 @@
 import './CSS/button.css'
-const TodoItem = ({keyId, todoText, todoDate, deleteTodoElement}) => {
- 
+import {useContext} from 'react'
+import ListContext from '../store/TodoContext';
+
+const TodoItem = ({keyId, todoText, todoDate}) => {
+  const{deleteTodoElement} = useContext(ListContext);
+  console.log(keyId, todoText, todoDate);
     return (
          <div className="container text-center">
         <div className="row ms-1" >
