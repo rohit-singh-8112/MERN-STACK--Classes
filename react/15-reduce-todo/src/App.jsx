@@ -1,25 +1,20 @@
-
-import {TodoItemContextProvider} from './store/TodoContext'
-
+import {TodoContextReducerProvider} from './store/todo-Context-Reducer'
 import AppName from './component/AppName'
-import AddTodo from './component/Addtodo'
+import Addtodo from './component/Addtodo'
 import TodoItems from './component/TodoItems'
-
-
 
 function App() {
  
- 
   return (
-      <TodoItemContextProvider>
-        <center>
-          <AppName />
-          <AddTodo />
-          <TodoItems />
-        </center>
-      </TodoItemContextProvider>
- 
-  );
+    <TodoContextReducerProvider>
+      <center>  
+        <AppName />
+        <Addtodo />
+        <TodoItems />
+      </center>
+    </TodoContextReducerProvider>
+    
+  )
 }
 
 export default App

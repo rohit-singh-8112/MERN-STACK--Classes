@@ -1,9 +1,9 @@
 import React,{ useContext } from 'react';
-import TodoItemContext from '../store/TodoContext';
+import TodoContextReducer from '../store/todo-Context-Reducer';
 
 import './CSS/button.css'
 const TodoItem = ({keyId, todoText, todoDate}) => {
- const {deleteTodoElement} = useContext(TodoItemContext);
+ const {deleteTodoElement} = useContext(TodoContextReducer);
     return (
          <div className="container text-center">
         <div className="row ms-1" >
@@ -13,7 +13,7 @@ const TodoItem = ({keyId, todoText, todoDate}) => {
             <button type="button" className="btn mt-1 btn-outline-danger button" onClick={()=>deleteTodoElement(keyId)}>Delete</button>
           </div>
         </div>
-      </div>
+      </div> 
     );
   };
   export default TodoItem; 

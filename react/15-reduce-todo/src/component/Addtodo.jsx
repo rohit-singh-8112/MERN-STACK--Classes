@@ -1,17 +1,17 @@
 import './CSS/button.css'
 import React,{ useRef, useContext } from 'react';
-import TodoItemContext from '../store/TodoContext';
+import TodoContextReducer from '../store/todo-Context-Reducer';
 
 const AddTodo = () => {
 
   const textInput = useRef();
   const dateInput = useRef();
-  const {addTodoInput} = useContext(TodoItemContext);
+  const {addTodoInput} = useContext(TodoContextReducer);
 
   const AddHandler =() => {
     const textValue = textInput.current.value;
     const dateValue = dateInput.current.value;
-    addTodoInput(textValue, dateValue);
+    addTodoInput(textValue, dateValue); 
     textInput.current.value =''; 
     dateInput.current.value = '';
   }
