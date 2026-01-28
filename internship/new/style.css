@@ -1,0 +1,50 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.nav {
+  background: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.page {
+  display: none;
+  padding: 40px;
+  height: 80vh;
+}
+
+/* Show default page */
+#home {
+  display: block;
+}
+
+/* Show clicked page */
+.page:target {
+  display: block;
+}
+
+/* Hide home when another page is active */
+.page:target ~ #home {
+  display: none;
+}
+input {
+  display: none;
+}
+
+.page {
+  display: none;
+}
+
+#home:checked ~ .content .home,
+#about:checked ~ .content .about,
+#contact:checked ~ .content .contact {
+  display: block;
+}

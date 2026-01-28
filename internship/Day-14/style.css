@@ -1,0 +1,114 @@
+/* =========================
+   Global & Mobile-First Styles
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #1f2933;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #374151;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #4b5563;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #1f2933;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* =========================
+   Tablet View (768px+)
+   ========================= */
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 48%;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   Desktop View (1024px+)
+   ========================= */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    body {
+        font-size: 18px;
+    }
+}

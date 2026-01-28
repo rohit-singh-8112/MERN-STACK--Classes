@@ -8,8 +8,7 @@ const TodoContextReducer = createContext();
 
 export const TodoContextReducerProvider = ({children}) =>{
     const [todoItem, todoDispatcher] = useReducer (Newval,[]);
-    const addTodoInput=(textValue,dateValue)=>{
-        const id = Date.now();
+    const addTodoInput=(id,textValue,dateValue)=>{
          todoDispatcher({
             type: 'ADD',
             payload: {id,textValue,dateValue}

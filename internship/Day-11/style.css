@@ -1,0 +1,105 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+}
+
+.section {
+  margin: 40px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #1f2937;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.login-btn {
+  padding: 8px 16px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== CARDS ===== */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex-basis: 220px;
+  padding: 20px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard {
+  display: flex;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #111827;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar p {
+  margin: 10px 0;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f9fafb;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat {
+  flex-grow: 1;
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}

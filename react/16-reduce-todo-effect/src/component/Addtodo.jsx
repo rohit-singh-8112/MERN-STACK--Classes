@@ -1,6 +1,7 @@
 import './CSS/button.css'
 import React,{ useRef, useContext } from 'react';
 import TodoContextReducer from '../store/todo-Context-Reducer';
+import{ openModal } from "../utils/modalUtil"
 
 const AddTodo = () => {
 
@@ -11,9 +12,29 @@ const AddTodo = () => {
   const AddHandler =() => {
     const textValue = textInput.current.value;
     const dateValue = dateInput.current.value;
-    addTodoInput(textValue, dateValue); 
+    // addTodoInput(textValue, dateValue); 
+    
     textInput.current.value =''; 
     dateInput.current.value = '';
+    fetch('http://localhost:3001/todos', {
+      method: 'POST',
+      headers: {  
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ 
+       
+        task: textValue,
+        date: dateValue 
+      })
+    })
+    .then( (response) => {
+      return response.json();
+    })
+    .then((serverItem) => {
+      // console.log(serverItem);
+      const clintItem = openModal(serverItem);
+      addTodoInput(clintItem.id, clintItem.textValue, clintItem.dateValue);
+    })
   }
 
     return (

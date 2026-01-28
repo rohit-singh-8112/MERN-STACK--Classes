@@ -2,7 +2,7 @@ const Newval = (stateVal, actions) =>{
     switch(actions.type){
         case 'ADD':{
         const {id, textValue, dateValue} = actions.payload;
-            return [{id, textValue, dateValue}, ...stateVal];
+            return [...stateVal, {id, textValue, dateValue}];
         }
         case 'DELETE':
             return stateVal.filter(todo => actions.payload.elementId !== todo.id );

@@ -1,0 +1,58 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page center */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid Container */
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 80px 200px 80px;
+  grid-template-areas:
+    "header header"
+    "main sidebar"
+    "footer footer";
+  gap: 10px;
+}
+
+/* Grid Items */
+.header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.main {
+  grid-area: main;
+  background-color: lightgreen;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightcoral;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightgray;
+}
+
+/* Common styling */
+.container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
